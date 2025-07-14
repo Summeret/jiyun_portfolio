@@ -1,0 +1,14 @@
+body {}
+#wrap {
+    height:100vh;
+}
+#wrap .swiper-wrapper {}
+#wrap .swiper-wrapper .swiper-slide {}
+#wrap .swiper-wrapper .intro {
+    background: url(../images/intro.png) center / cover;
+}
+#wrap .swiper-wrapper .profile {}
+#wrap .swiper-wrapper .web_design {}
+#wrap .swiper-wrapper .banner_design {}
+#wrap .swiper-wrapper .detailed_page {}
+#wrap .swiper-wrapper .outro {}
