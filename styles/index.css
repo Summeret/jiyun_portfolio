@@ -6,9 +6,152 @@ body {}
 #wrap .swiper-wrapper .swiper-slide {}
 #wrap .swiper-wrapper .intro {
     background: url(../images/intro.png) center / cover;
+    position:relative;
 }
 #wrap .swiper-wrapper .profile {}
 #wrap .swiper-wrapper .web_design {}
 #wrap .swiper-wrapper .banner_design {}
 #wrap .swiper-wrapper .detailed_page {}
 #wrap .swiper-wrapper .outro {}
+
+#wrap .swiper-wrapper .intro .title {
+    width:max-content;
+    position:absolute; right:0px; top:422px;
+}
+#wrap .swiper-wrapper .intro .title span {
+    font-weight:500; font-size:11.25rem;
+    letter-spacing:0.14em;
+}
+#wrap .swiper-wrapper .intro .title span:nth-child(1), 
+#wrap .swiper-wrapper .intro .title span:nth-child(2),
+#wrap .swiper-wrapper .intro .title span:nth-child(3), 
+#wrap .swiper-wrapper .intro .title span:nth-child(4) {
+    color:#F9F3EF;
+} 
+#wrap .swiper-wrapper .intro .title span:nth-child(5), 
+#wrap .swiper-wrapper .intro .title span:nth-child(6),
+#wrap .swiper-wrapper .intro .title span:nth-child(7), 
+#wrap .swiper-wrapper .intro .title span:nth-child(8),
+#wrap .swiper-wrapper .intro .title span:nth-child(9) {
+    color:#1B3C53;
+} 
+#wrap .swiper-wrapper .intro .title .top_line {
+    position: relative;
+}
+#wrap .swiper-wrapper .intro .title .top_line::after {
+    content: "";
+    position: absolute;
+    bottom: 65%; left: 77%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 0;
+    background-color: #F9F3EF;
+    animation: growLine 1.2s ease forwards;
+    animation-delay: 0.3s; 
+}
+#wrap .swiper-wrapper .intro .title .bot_line::after {
+    content: "";
+    position: absolute;
+    top: 64%; right:652px;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 0;
+    background-color: #1B3C53;
+    animation: growLine 1.2s ease forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes growLine {
+    0% {height: 0;}
+    100% {height: 460px;}
+}
+
+#wrap .swiper-wrapper .intro .contact {
+    display:flex; flex-flow:column nowrap;
+    gap:50px;
+    position:absolute; left:80px; bottom:62px;
+}
+#wrap .swiper-wrapper .intro .contact h2 {
+    color:#F9F3EF;
+    font-size: 1.5rem;
+    letter-spacing:0.14em;
+}
+#wrap .swiper-wrapper .intro .contact .phone {}
+#wrap .swiper-wrapper .intro .contact .phone p {
+    color:#F9F3EF;
+}
+#wrap .swiper-wrapper .intro .contact .email {}
+#wrap .swiper-wrapper .intro .contact .email p {
+    color:#F9F3EF;
+}
+
+#wrap .swiper-wrapper .intro .contact .phone p:first-child,
+#wrap .swiper-wrapper .intro .contact .email p:first-child {
+    margin-bottom:10px;
+    font-size: 1.125rem;
+}
+
+#wrap .swiper-wrapper .intro .content {
+    position:absolute; right:270px; bottom:240px;
+}
+#wrap .swiper-wrapper .intro .content p {
+    color:#1B3C53;
+    font-weight:500; font-size:1.125rem;
+    margin-bottom:20px;
+    animation:contentUp 2s ease both;
+}
+#wrap .swiper-wrapper .intro .content p:nth-child(1) {
+    animation-delay: 0.2s;
+}
+#wrap .swiper-wrapper .intro .content p:nth-child(2) {
+    animation-delay: 0.4s;
+}
+#wrap .swiper-wrapper .intro .content p:last-child {
+    margin-bottom: 0;
+    line-height:1.6;
+    animation-delay: 0.6s;
+}
+
+@keyframes contentUp {
+    0% {opacity: 0; transform: translateY(30px);}
+    100% {opacity: 1; transform: translateY(0);}
+}
+
+#wrap .swiper-wrapper .intro .web {
+    display: flex; gap:30px;
+    padding:10px 5px 10px 20px;
+    position:absolute; top:380px; left:860px;
+}
+#wrap .swiper-wrapper .intro .web p {
+    color:#F9F3EF; font-size: 0.75rem;
+    animation: webLeft 2s ease both;
+}
+#wrap .swiper-wrapper .intro .web p:nth-child(1) {
+    animation-delay: 0.6s;
+}
+#wrap .swiper-wrapper .intro .web p:nth-child(2) {
+    animation-delay: 0.4s;
+}
+#wrap .swiper-wrapper .intro .web p:nth-child(3) {
+    animation-delay: 0.2s;
+}
+#wrap .swiper-wrapper .intro .web::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+    width: 0;
+    height: 0.1px;
+    background-color: #F9F3EF;
+    animation: webLeftLine 1.5s ease forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes webLeft {
+    0% {opacity: 0; transform: translateX(30px);}
+    100% {opacity: 1; transform: translateX(0);}
+}
+@keyframes webLeftLine {
+    0% {width: 0; right:0;}
+    100% {width: 100%; right:0;}
+}
