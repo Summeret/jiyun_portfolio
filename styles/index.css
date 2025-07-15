@@ -11,6 +11,10 @@ header {
     border-bottom:0.3px solid rgba(51,51,51,0.3);
     z-index: 800;
 }
+header.hide {
+    opacity: 0;
+    pointer-events: none;
+}
 header nav {}
 header nav a {
     font-size:0.875rem;
@@ -18,12 +22,14 @@ header nav a {
     opacity: 0.6;
     transition: opacity 0.2s;
     margin-right:50px;
+    transition: color 0.7s ease, opacity 0.7s ease;
 }
-header a:last-child {margin-right: 0;}
-header a:hover {
+header a:hover,
+header nav a.active {
     color:#1B3C53;
     opacity: 1;
 }
+header a:last-child {margin-right: 0;}
 
 #wrap {
     height:100vh;
@@ -35,7 +41,7 @@ header a:hover {
     position:relative;
 }
 
-#wrap .swiper-wrapper .web_design {}
+
 #wrap .swiper-wrapper .banner_design {}
 #wrap .swiper-wrapper .detailed_page {}
 #wrap .swiper-wrapper .outro {}
@@ -188,12 +194,13 @@ header a:hover {
 #wrap .swiper-wrapper .profile {
     position: relative;
     z-index:600;
+    background: url(../images/ji_yun.png) no-repeat center 40% / contain;
 }
 #wrap .swiper-wrapper .profile > p {
     font-size:1.75rem; 
     color:rgba(27,60,83,0.8);
     line-height: 1.7;
-    position:absolute; left:550px; top:120px;
+    position:absolute; left:570px; top:120px;
 }
 #wrap .swiper-wrapper .profile > p em {
     font-size:2rem; font-weight:700;
@@ -230,8 +237,13 @@ header a:hover {
 
 #wrap .swiper-wrapper .profile .container .profile_photo .profile_wrap {}
 #wrap .swiper-wrapper .profile .container .profile_photo .profile_wrap .profile_cont {}
-#wrap .swiper-wrapper .profile .container .profile_photo .profile_wrap .profile_cont li {}
+#wrap .swiper-wrapper .profile .container .profile_photo .profile_wrap .profile_cont li {
+    margin-bottom:15px;
+}
 #wrap .swiper-wrapper .profile .container .profile_photo .profile_wrap .profile_cont li span {}
+#wrap .swiper-wrapper .profile .container .profile_photo .profile_wrap .profile_cont li:first-child span {
+    font-weight:500; font-size: 1.2rem;
+}
 #wrap .swiper-wrapper .profile .container .profile_photo .profile_wrap .profile_cont li span em {
     font-size:0.75rem; margin-left:10px;
 }
@@ -296,6 +308,93 @@ header a:hover {
 
 
 /* ------------------------------- 웹디자인 */
+#wrap .swiper-wrapper .web_design {}
+#wrap .swiper-wrapper .web_design .title {
+    padding:50px 80px; margin-top:54px;
+}
+#wrap .swiper-wrapper .web_design .title h2 {
+    font-size: 3rem; font-weight: 600;
+    margin-bottom:20px;
+    color:rgba(27,60,83,0.8)
+}
+#wrap .swiper-wrapper .web_design .title p {
+    font-size: 1.25rem  ;
+}
+
+#wrap .swiper-wrapper .web_design .container {
+    width:1400px; margin:0 auto;
+    background-color: aqua;
+    padding:60px 0;
+    position:relative;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper {
+    height:600px; width:1200px;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper {}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide {
+    display: flex; justify-content: space-between;
+    align-items: center;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide p {
+    width:750px; 
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide p img {width:100%;}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .content {
+    width:400px; height:max-content;
+
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .content p {
+    margin:0 96.5px 40px;
+
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .content p span {
+    font-size: 1.25rem; margin-right:10px;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .content p em {
+    font-size: 2.25rem; font-weight: 500;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .content ul {}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .content ul li {
+    margin-bottom:20px;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .content ul li:last-child {
+    margin-bottom:0;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .content .btn_wrap {
+    display: flex; justify-content: space-between;
+    margin-top:40px;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .content .btn_wrap a {
+    width:195px; padding:10px 65px;
+    border:1px solid #1B3C53; color:#1B3C53;
+    border-radius: 5px;
+    font-size:0.875rem;
+    transition: background-color 1s ease, color 1s ease, border-color 1s ease;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .content .btn_wrap a:hover {
+    background-color: #1B3C53;
+    color:#F9F3EF;
+}
+#wrap .swiper-wrapper .web_design .container .swiper-button-prev,
+#wrap .swiper-wrapper .web_design .container .swiper-button-next,
+#wrap .swiper-wrapper .web_design .container .swiper-scrollbar {
+    color:#1B3C53;
+}
+
 /* ------------------------------- 배너디자인 */
 /* ------------------------------- 상세페이지 */
 /* ------------------------------- 아웃트로 */
+
+/* -------------------------------------- 디자인팝업 */
+.webdesign_popupbg {
+    position:fixed; left:0; top:0;
+    z-index: 500;
+    background: rgba(0,0,0,0.5);
+    width:100%; height:100vh;
+    display:none;
+}
+.webdesign_popupbg .popup {
+    width:700px; margin:70px auto;
+    height:800px; overflow:auto;
+}
+.webdesign_popupbg .popup img {width:100%;}
