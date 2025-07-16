@@ -10,6 +10,8 @@
     <!--플러그인 필수 JS cdn 연결-->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
     <!-- 사용자 파일 연결 -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -24,6 +26,7 @@
             <a href="#">Web_Design</a>
             <a href="#">Design</a>
             <a href="#">Detailed_page</a>
+            <a href="#">OUTRO</a>
         </nav>
     </header>
     <div class="swiper" id="wrap">
@@ -124,7 +127,7 @@
                     <div class="swiper" id="project_swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide slide1">
-                                <p><a href="#"><img src="./images/desktop_round.png" alt=""></a></p>
+                                <p><img src="./images/web/desktop_round.png" alt=""></p>
                                 <div class="content">
                                     <p><span>Project</span><em>라운드랩</em></p>
                                     <ul>
@@ -140,24 +143,115 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide slide2">slide2</div>
+                            <div class="swiper-slide slide2">
+                                <p><img src="./images/web/desktop_pulmuone.png" alt=""></p>
+                                <div class="content">
+                                    <p><span>Project</span><em>풀무원</em></p>
+                                    <ul>
+                                        <li>1920 데스크탑 전용 웹사이트</li>
+                                        <li>제작페이지 : 메인페이지, 브랜드 소개페이지, 상품상세 페이지</li>
+                                        <li>사용 스킬 : Figma, Photoshop, HTML5, CSS3, javascript</li>
+                                        <li>2025.06 (30H)</li>
+                                        <li>디자인 기여도 : 100%</li>
+                                    </ul>
+                                    <div class="btn_wrap">
+                                        <a href="https://summeret.github.io/project_pulmuone/" target="_blank">프로토타입</a>
+                                        <a href="https://shop.pulmuone.co.kr/?utm_source=google&utm_medium=cpc&utm_campaign=kw&utm_term=%ED%92%80%EB%AC%B4%EC%9B%90&gad_source=1&gad_campaignid=14081993446&gbraid=0AAAAABt9ix_jUVM7NHCjOCGCfDab0ey-e&gclid=Cj0KCQjw-NfDBhDyARIsAD-ILeDMOcGpOUfRj8bYZrfzge9LjKYcA5fGa-5fvOoAjFADkMDOfy1edHYaApWeEALw_wcB" target="_blank">원본사이트</a>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="swiper-slide slide3">slide3</div>
                             <div class="swiper-slide slide4">slide4</div>
                         </div>
                     </div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
-                    <div class="swiper-scrollbar"></div>
+                    <div class="swiper-pagination"></div>
+                    <!-- <div class="swiper-scrollbar"></div> -->
                 </div>
             </div>
-            <div class="swiper-slide banner_design">slide4</div>
-            <div class="swiper-slide detailed_page">slide5</div>
-            <div class="swiper-slide outro">slide6</div>
+            <div class="swiper-slide banner_design">
+                <h2>Banner_Design</h2>
+                <div class="bnr_container">
+                    <div class="swiper" id="bnr_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1"><img src="./images/bnr/project_001.jpg" alt=""></div>
+                            <div class="swiper-slide slide2"><img src="./images/bnr/project_001.jpg" alt=""></div>
+                            <div class="swiper-slide slide3"><img src="./images/bnr/project_001.jpg" alt=""></div>
+                            <div class="swiper-slide slide4"><img src="./images/bnr/project_001.jpg" alt=""></div>
+                            <div class="swiper-slide slide5"><img src="./images/bnr/project_001.jpg" alt=""></div>
+                            <div class="swiper-slide slide6"><img src="./images/bnr/project_001.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="swiper" id="sns_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1"><img src="/images/sns/project_001.jpg" alt=""></div>
+                            <div class="swiper-slide slide2"><img src="/images/sns/project_002.jpg" alt=""></div>
+                            <div class="swiper-slide slide3"><img src="/images/sns/project_003.jpg" alt=""></div>
+                            <div class="swiper-slide slide4"><img src="/images/sns/project_004.jpg" alt=""></div>
+                            <div class="swiper-slide slide5"><img src="/images/sns/project_005.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide detailed_page">
+                <h2>Detailed_page</h2>
+                <div class="container">
+                    <div class="swiper" id="detail_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1"><img src="./images/detail/project_002.jpg" alt=""></div>
+                            <div class="swiper-slide slide2"><img src="./images/detail/project_002.jpg" alt=""></div>
+                            <div class="swiper-slide slide3"><img src="./images/detail/project_003.jpg" alt=""></div>
+                            <div class="swiper-slide slide4"><img src="./images/detail/project_004.jpg" alt=""></div>
+                            <div class="swiper-slide slide4"><img src="./images/detail/project_005.jpg" alt=""></div>
+                            <div class="swiper-slide slide4"><img src="./images/detail/project_005.jpg" alt=""></div>
+                            <div class="swiper-slide slide4"><img src="./images/detail/project_005.jpg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide outro">
+                <h2 class="thank_you">
+                    <span class="thank">THANK</span>
+                    <span class="you">YOU</span>
+                </h2>
+                <h2 class="for_reading">
+                    <span class="thank">FOR</span>
+                    <span class="you">READING</span>
+                </h2>
+                <div class="contact">
+                    <h3>CONTACT</h3>
+                    <div class="phone">
+                        <p>PHONE</p>
+                        <P>010.7472.1344</P>
+                    </div>
+                    <div class="email">
+                        <p>EMAIL</p>
+                        <P>jyiun32@naver.com</P>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>끝까지 읽어주셔서 감사합니다</p>
+                    <p>작지만 섬세한 차이를 만드는 디자이너<br>김지윤이었습니다</p>
+                </div>
+            </div>
         </div>
         <!-- 디자인프로젝트 실행 팝업 -->
-        <div class="webdesign_popupbg">
+        <div class="sns_popupbg">
             <div class="popup">
-                <img src="./images/roundlab_main.jpg" alt="">
+                <img src="./images/sns/project_001.jpg" alt="">
+            </div>
+        </div>
+        <div class="bnr_popupbg">
+            <div class="popup">
+                <img src="./images/bnr/project_001.jpg" alt="">
+            </div>
+        </div>
+        <div class="detail_popupbg">
+            <div class="popup">
+                <img src="./images/detail/project_002.jpg" alt="">
             </div>
         </div>
     </div>
