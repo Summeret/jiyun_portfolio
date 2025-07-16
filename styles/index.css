@@ -319,7 +319,7 @@ header a:last-child {margin-right: 0;}
 
 #wrap .swiper-wrapper .web_design .container {
     width:1300px; margin:0 auto;
-    padding:40px 0;
+    padding:20px 0 60px;
     position:relative;
 }
 #wrap .swiper-wrapper .web_design .container #project_swiper {
@@ -339,14 +339,14 @@ header a:last-child {margin-right: 0;}
 
 }
 #wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .content p {
-    margin:0 96.5px 40px;
+    margin-bottom:40px;
 
 }
 #wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .content p span {
-    font-size: 1.25rem; margin-right:10px;
+    font-size: 1.125rem; margin-right:10px;
 }
 #wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .content p em {
-    font-size: 2.25rem; font-weight: 500;
+    font-size: 1.75rem; font-weight: 500;
 }
 #wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .content ul {}
 #wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .content ul li {
@@ -370,6 +370,7 @@ header a:last-child {margin-right: 0;}
     background-color: #1B3C53;
     color:#F9F3EF;
 }
+
 #wrap .swiper-wrapper .web_design .container .swiper-button-prev,
 #wrap .swiper-wrapper .web_design .container .swiper-button-next {
     color:#1B3C53;
