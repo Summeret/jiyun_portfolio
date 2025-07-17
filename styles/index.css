@@ -192,14 +192,18 @@ header a:last-child {margin-right: 0;}
     z-index:600;
     background: url(../images/ji_yun.png) no-repeat center 40% / contain;
 }
-#wrap .swiper-wrapper .profile > p {
-    font-size:1.75rem; 
+#wrap .swiper-wrapper .profile >p {
+    font-size:1.75rem;
     color:rgba(27,60,83,0.8);
-    line-height: 1.7;
-    position:absolute; left:570px; top:120px;
+    line-height: 1.8;
+    position:absolute; left:600px; top:120px;
 }
-#wrap .swiper-wrapper .profile > p em {
-    font-size:2rem; font-weight:700;
+#wrap .swiper-wrapper .profile >p span {
+    font-size: 1.2rem; color:rgba(27,60,83,0.8);
+    font-weight:500;
+}
+#wrap .swiper-wrapper .profile >p em {
+    font-size:2rem; font-weight:600;
     color:rgba(27,60,83,0.8);
 }
 #wrap .swiper-wrapper .profile .container {
@@ -236,9 +240,17 @@ header a:last-child {margin-right: 0;}
 #wrap .swiper-wrapper .profile .container .profile_photo .profile_wrap .profile_cont li {
     margin-bottom:15px;
 }
+#wrap .swiper-wrapper .profile .container .profile_photo .profile_wrap .profile_cont li em {
+    font-weight:500; display: inline-block;
+    width:80px;
+}
 #wrap .swiper-wrapper .profile .container .profile_photo .profile_wrap .profile_cont li span {}
 #wrap .swiper-wrapper .profile .container .profile_photo .profile_wrap .profile_cont li:first-child span {
     font-weight:500; font-size: 1.2rem;
+}
+#wrap .swiper-wrapper .profile .container .profile_photo .profile_wrap .profile_cont li:first-child span:nth-child(3) {
+    font-size:0.875rem; margin-left:10px;
+    font-weight:400;
 }
 #wrap .swiper-wrapper .profile .container .profile_photo .profile_wrap .profile_cont li span em {
     font-size:0.75rem; margin-left:10px;
@@ -497,7 +509,7 @@ header a:last-child {margin-right: 0;}
 }
 
 #wrap .swiper-wrapper .outro .content {
-    position:absolute; right:400px; bottom:250px;
+    position:absolute; right:370px; bottom:280px;
 }
 #wrap .swiper-wrapper .outro .content p {
     color:#1B3C53;
@@ -510,6 +522,17 @@ header a:last-child {margin-right: 0;}
     margin-top:10px;
     line-height:1.6;
     animation-delay: 0.6s;
+}
+#wrap .swiper-wrapper .outro .thank_you::after {
+    content: "";
+    position: absolute;
+    bottom: 68%; left:0.6%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 0;
+    background-color: #F9F3EF;
+    animation: growLine 1.2s ease forwards;
+    animation-delay: 0.3s; 
 }
 
 
