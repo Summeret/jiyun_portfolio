@@ -1,6 +1,6 @@
 body {
     width:100%; height:100vh;
-    background-color: #F9F3EF;
+    background-color: #fff;
 }
 
 header {
@@ -55,7 +55,7 @@ header a:last-child {margin-right: 0;}
 #wrap .swiper-wrapper .intro .title span:nth-child(2),
 #wrap .swiper-wrapper .intro .title span:nth-child(3), 
 #wrap .swiper-wrapper .intro .title span:nth-child(4) {
-    color:#F9F3EF;
+    color:#fff;
 } 
 #wrap .swiper-wrapper .intro .title span:nth-child(5), 
 #wrap .swiper-wrapper .intro .title span:nth-child(6),
@@ -74,7 +74,7 @@ header a:last-child {margin-right: 0;}
     transform: translateX(-50%);
     width: 1px;
     height: 0;
-    background-color: #F9F3EF;
+    background-color: #fff;
     animation: growLine 1.2s ease forwards;
     animation-delay: 0.3s; 
 }
@@ -153,7 +153,7 @@ header a:last-child {margin-right: 0;}
     position:absolute; top:380px; left:860px;
 }
 #wrap .swiper-wrapper .intro .web p {
-    color:#F9F3EF; font-size: 0.75rem;
+    color:#fff; font-size: 0.75rem;
     animation: webLeft 2s ease both;
 }
 #wrap .swiper-wrapper .intro .web p:nth-child(1) {
@@ -172,7 +172,7 @@ header a:last-child {margin-right: 0;}
     right: 0;
     width: 0;
     height: 0.1px;
-    background-color: #F9F3EF;
+    background-color: #fff;
     animation: webLeftLine 1.5s ease forwards;
     animation-delay: 0.3s;
 }
@@ -335,11 +335,11 @@ header a:last-child {margin-right: 0;}
     position:relative;
 }
 #wrap .swiper-wrapper .web_design .container #project_swiper {
-    height:500px; width:1100px;
+    height:600px; width:1200px;
 }
 #wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper {}
 #wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide {
-    display: flex; justify-content: space-between;
+    display: flex; gap:100px; justify-content: center;
     align-items: center;
 }
 #wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide p {
