@@ -110,10 +110,10 @@ bnrPopup.addEventListener('click',()=>{
 
 //상세페이지 슬라이드
 const detailePage = new Swiper('#detail_swiper',{
-    slidesPerView:5.5,
+    slidesPerView:5,
     spaceBetween:20,
     autoplay:{delay:0},
-    speed:8000,
+    speed:7000,
     loop:true,
 })
 const detaile_pro = document.querySelectorAll('#detail_swiper .swiper-slide')

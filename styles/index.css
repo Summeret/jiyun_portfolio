@@ -430,7 +430,8 @@ header a:last-child {margin-right: 0;}
     color:rgba(27,60,83,0.8);
 }
 #wrap .swiper-wrapper .detailed_page .container {
-    background-color: aqua;
+/*     border-top:1px solid #1B3C53;
+    border-bottom:1px solid #1B3C53; */
     width:1920px; 
     padding:30px 0;
 }
