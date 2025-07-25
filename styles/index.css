@@ -98,8 +98,8 @@ header a:last-child {margin-right: 0;}
 
 #wrap .swiper-wrapper .intro .contact {
     display:flex; flex-flow:column nowrap;
-    gap:50px;
-    position:absolute; left:80px; bottom:62px;
+    gap:30px;
+    position:absolute; left:100px; bottom:60px;
 }
 #wrap .swiper-wrapper .intro .contact h2 {
     color:#F9F3EF;
@@ -403,7 +403,7 @@ header a:last-child {margin-right: 0;}
 #wrap .swiper-wrapper .banner_design .bnr_container #bnr_swiper {
     /* background-color:aqua; */
     border-radius: 20px;
-    width:1400px; height:150px;
+    width:1600px; height:200px;
     margin:50px auto 0;
 }
 #wrap .swiper-wrapper .banner_design .bnr_container #bnr_swiper .swiper-wrapper {
@@ -421,7 +421,7 @@ header a:last-child {margin-right: 0;}
 #wrap .swiper-wrapper .banner_design .container #sns_swiper {
     /* background-color:aqua; */
     border-radius: 20px;
-    width:1400px; height:340px;
+    width:1600px; height:380px;
     margin:10px auto 0;
 }
 #wrap .swiper-wrapper .banner_design .container #sns_swiper .swiper-wrapper {
