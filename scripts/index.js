@@ -1,6 +1,6 @@
 //전체 수직 + 헤더 숨기보이기
 const wrap = new Swiper('#wrap',{
-    //direction:'vertical',
+    direction:'vertical',
     mousewheel:true,
 
     on: {
@@ -47,7 +47,7 @@ wrap.on('slideChange', function () {
 
 //프로젝트 슬라이드
 const project1 = new Swiper('#project_swiper',{
-    autoplay:{delay:3500},
+    autoplay:{delay:4000},
     loop:true,
     //scrollbar:{el:'#project_swiper~.swiper-scrollbar'},
     pagination: {
