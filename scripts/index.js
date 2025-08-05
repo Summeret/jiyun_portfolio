@@ -1,6 +1,6 @@
 //전체 수직 + 헤더 숨기보이기
 const wrap = new Swiper('#wrap',{
-    //direction:'vertical',
+    direction:'vertical',
     mousewheel:true,
 
     on: {
