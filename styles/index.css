@@ -509,7 +509,7 @@ header a:last-child {margin-right: 0;}
 }
 
 /* ------------------------------- 아웃트로 */
-#wrap .swiper-wrapper .outro {
+/* #wrap .swiper-wrapper .outro {
     background: url(../images/intro1.png) 65% center / cover;
     position:relative;
 }
@@ -583,7 +583,7 @@ header a:last-child {margin-right: 0;}
     background-color: #F9F3EF;
     animation: growLine 1.2s ease forwards;
     animation-delay: 0.3s; 
-}
+} */
 
 
 
