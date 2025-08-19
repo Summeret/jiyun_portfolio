@@ -74,7 +74,7 @@ header a:last-child {margin-right: 0;}
 } */
 
 #wrap .swiper-wrapper .intro {
-    background-image: url(../images/intro.png);
+    /* background-image: url(../images/intro.png); */
     position:relative;
 }
 #wrap .swiper-wrapper .intro h1 {
@@ -86,6 +86,23 @@ header a:last-child {margin-right: 0;}
     font-size: 1.875rem;
     color: #1B3C53;
     margin:0 0 22px 205px;
+}
+#wrap .swiper-wrapper .intro .square {
+    position:absolute; right:250px; top:70px;
+}
+#wrap .swiper-wrapper .intro > p::after {
+    content:''; display:block;
+    position: absolute;
+    width:1px; height:0;
+    background-color: #1B3C53; opacity: 0.5;
+    margin-top: 22px;
+    transform: translateX(-50%);
+    animation:line 2s ease forwards;
+}
+
+@keyframes line {
+    0% { height: 0; }
+    100% { height: 230px; }
 }
 
 #wrap .swiper-wrapper .intro .container {
