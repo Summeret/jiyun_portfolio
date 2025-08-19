@@ -68,12 +68,12 @@ header a:last-child {margin-right: 0;}
 #wrap .swiper-wrapper .intro h1 {
     font-size:9.375rem; font-weight: 900;
     color:#1B3C53; letter-spacing: 0.2em;
-    margin:100px 0 20px 200px;
+    margin:100px 0 20px 150px;
 }
 #wrap .swiper-wrapper .intro > p {
     font-size: 1.875rem;
     color: #1B3C53;
-    margin:0 0 22px 205px;
+    margin:0 0 22px 155px;
 }
 #wrap .swiper-wrapper .intro .square {
     position:absolute; right:250px; top:70px;
@@ -137,7 +137,7 @@ header a:last-child {margin-right: 0;}
 #wrap .swiper-wrapper .intro .contact {
     display:flex; flex-flow:column nowrap;
     gap:30px;
-    position:absolute; left:205px; bottom:100px;
+    position:absolute; left:155px; bottom:100px;
 }
 #wrap .swiper-wrapper .intro .contact h2 {
     color:#1B3C53;

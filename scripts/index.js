@@ -126,7 +126,7 @@ bnrPopup.addEventListener('click',()=>{
 const detailePage = new Swiper('#detail_swiper',{
     slidesPerView:1,
     spaceBetween:20,
-    autoplay:{delay:4000},
+    autoplay:{delay:2500},
     loop:true,
 })
 const detaile_pro = document.querySelectorAll('#detail_swiper .swiper-slide')
