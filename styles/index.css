@@ -59,49 +59,7 @@ header a:last-child {margin-right: 0;}
 
 
 /* ------------------------------- 인트로 */
-#wrap .swiper-wrapper .intro .title {
-    position: absolute;
-    top: 380px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100vw;
-    height: 100vh;
-    font-size: 10vw;
-    font-weight:500;
-   /*  font-family: 'Patrick Hand', cursive; */ /* 감성적인 붓글씨 */
-    color: transparent; /* 본문 텍스트 숨김 */
-    text-align: center;
-    margin: 0 auto;
-    line-height: 1.3;
-    position: relative;
-}
-
-.title::before {
-    content: attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    background: linear-gradient(90deg, #1B3C53, #B0C4DE);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    overflow: hidden;
-    clip-path: inset(0 100% 0 0);
-    animation: brushReveal 2s steps(60) 0.5s forwards;
-    }
-
-@keyframes brushReveal {
-    to {
-        clip-path: inset(0 0 0 0);
-    }
-}
-/* ---- */
-
-#wrap .swiper-wrapper .intro .title .top_line {
-    position: relative;
-}
-#wrap .swiper-wrapper .intro .title .top_line::after {
+/* #wrap .swiper-wrapper .intro .title .top_line::after {
     content: "";
     position: absolute;
     bottom: 50%; left: 77%;
@@ -111,36 +69,92 @@ header a:last-child {margin-right: 0;}
     background-color: #1B3C53;
     animation: growLine 1.2s ease forwards;
     animation-delay: 0.3s; 
+} */
+
+#wrap .swiper-wrapper .intro {
+    background-image: url(../images/intro.png);
+    position:relative;
 }
-#wrap .swiper-wrapper .intro .title .bot_line::after {
-    content: "";
-    position: absolute;
-    top: 29%; right:652px;
-    transform: translateX(-50%);
-    width: 1px;
-    height: 0;
-    background-color: #1B3C53;
-    animation: growLine 1.2s ease forwards;
-    animation-delay: 0.3s;
+#wrap .swiper-wrapper .intro h1 {
+    font-size:9.375rem; font-weight: 900;
+    color:#1B3C53; letter-spacing: 0.05em;
+    margin:100px 0 20px 200px;
+}
+#wrap .swiper-wrapper .intro > p {
+    font-size: 1.875rem;
+    color: #1B3C53;
+    margin:0 0 22px 205px;
+}
+
+#wrap .swiper-wrapper .intro .container {
+    position:absolute; right:430px; top:420px;
+    width:400px; text-align: center;
+}
+#wrap .swiper-wrapper .intro .container #web_swiper {
+    width:400px; height:226px;
+}
+#wrap .swiper-wrapper .intro .container #web_swiper .swiper-wrapper {
+    transition-timing-function: linear;
+}
+
+#wrap .swiper-wrapper .intro .container #web_swiper .swiper-slide {
+    font-size: 2.25rem;
+    color: #1B3C53;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+/* 중앙 슬라이드 강조 */
+#wrap .swiper-wrapper .intro .container #web_swiper .swiper-slide-active {
+    transform: scale(1.2);
+    font-weight: bold;
+    color: #1B3C53;
+    z-index: 10;
+}
+
+/* 옆 슬라이드 작게 */
+.container #web_swiper .swiper-slide-prev,
+.container #web_swiper .swiper-slide-next {
+    transform: scale(0.85);
+    opacity: 0.6;
+    color: #1B3C53;
+}
+
+#wrap .swiper-wrapper .intro .arrow_wrap {}
+#wrap .swiper-wrapper .intro .arrow_wrap .left_arrow {
+    position:absolute; right: 840px; top:487px;
+}
+#wrap .swiper-wrapper .intro .arrow_wrap .right_arrow {
+    position:absolute; right:390px; top:487px;
 }
 
 #wrap .swiper-wrapper .intro .contact {
     display:flex; flex-flow:column nowrap;
     gap:30px;
-    position:absolute; left:140px; bottom:60px;
+    position:absolute; left:205px; bottom:100px;
 }
 #wrap .swiper-wrapper .intro .contact h2 {
     color:#1B3C53;
     font-size: 1.5rem;
     letter-spacing:0.14em;
 }
-#wrap .swiper-wrapper .intro .contact .phone {}
-#wrap .swiper-wrapper .intro .contact .phone p {
+#wrap .swiper-wrapper .intro .contact > p {
+    font-size: 1.25rem; color:#1B3C53;
+}
+#wrap .swiper-wrapper .intro .contact .phone {
+    display: flex; gap:10px;
+}
+#wrap .swiper-wrapper .intro .contact .phone span {
     color:#1B3C53;
 }
-#wrap .swiper-wrapper .intro .contact .email {}
-#wrap .swiper-wrapper .intro .contact .email p {
+#wrap .swiper-wrapper .intro .contact .email {
+    display: flex; gap:10px;
+}
+#wrap .swiper-wrapper .intro .contact .email span {
     color:#1B3C53;
+}
+#wrap .swiper-wrapper .intro .contact .phone span:first-child,
+#wrap .swiper-wrapper .intro .contact .email span:first-child {
+    font-size: 1.125rem;
 }
 
 #wrap .swiper-wrapper .intro .contact .phone p:first-child,
@@ -149,89 +163,7 @@ header a:last-child {margin-right: 0;}
     font-size: 1.125rem;
 }
 
-#wrap .swiper-wrapper .intro .content {
-    position:absolute; right:800px; bottom:200px;
-    text-align: center;
-}
-#wrap .swiper-wrapper .intro .content p {
-    font-size: 1.2rem;
-    color:#1B3C53;
-    font-weight:500;
-    margin-bottom:20px;
-    animation:contentUp 3s ease both;
-}
-#wrap .swiper-wrapper .intro .content p:nth-child(1) {
-    animation-delay: 0.6s;
-    font-weight:400;
-}
-#wrap .swiper-wrapper .intro .content p:nth-child(2) {
-    animation-delay: 0.8s;
-}
-#wrap .swiper-wrapper .intro .content p:nth-child(3) {
-    animation-delay: 1s;
-}
-#wrap .swiper-wrapper .intro .content p:last-child {
-    margin-bottom: 0;
-}
 
-@keyframes contentUp {
-    0% {opacity: 0; transform: translateY(30px);}
-    100% {opacity: 1; transform: translateY(0);}
-}
-
-#wrap .swiper-wrapper .intro .web {
-    display: flex; gap:30px;
-    padding:10px 5px 10px 20px;
-    position:absolute; top:350px; left:678px;
-}
-#wrap .swiper-wrapper .intro .web p {
-    color:#1B3C53; font-size: 0.75rem;
-    font-weight: 500;
-    animation: webLeft 3s ease both;
-}
-#wrap .swiper-wrapper .intro .web p:nth-child(1) {
-    animation-delay: 1.9s;
-}
-#wrap .swiper-wrapper .intro .web p:nth-child(2) {
-    animation-delay: 1.8s;
-}
-#wrap .swiper-wrapper .intro .web p:nth-child(3) {
-    animation-delay: 1.7s;
-}
-#wrap .swiper-wrapper .intro .web::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 0;
-    height: 0.1px;
-    background-color: #B0C4DE;
-    animation: webLeftLine 2s ease forwards;
-    animation-delay: 1.8s;
-}
-#wrap .swiper-wrapper .intro .title::after {
-    content: "";
-    position: absolute;
-    bottom: 91.4%; right: 45.95%;
-    transform: translateX(-50%);
-    width: 0.5px;
-    height: 0;
-    background-color: #B0C4DE;
-    animation: growLine 2s ease forwards;
-    animation-delay: 1.6s; 
-}
-@keyframes growLine {
-    0% {height: 0;}
-    100% {height: 480px;}
-}
-@keyframes webLeft {
-    0% {opacity: 0; transform: translateX(30px);}
-    100% {opacity: 1; transform: translateX(0);}
-}
-@keyframes webLeftLine {
-    0% {width: 0; right:0;}
-    100% {width: 100%; right:0;}
-}
 
 /* ------------------------------- 프로필 */
 #wrap .swiper-wrapper .profile {

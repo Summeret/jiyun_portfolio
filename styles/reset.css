@@ -10,7 +10,7 @@ table, thead, tbody, tfoot, tr, td, th {
     line-height:1; letter-spacing:-0.02em; word-spacing:0;
     font-size:1em; font-weight:400; font-style:normal;
     color:#333;
-    font-family:'Noto Sans KR','san-serif'
+    font-family:'pretendard','san-serif'
 }
 /* 개별 태그 초기값 */
 a {text-decoration:none;}

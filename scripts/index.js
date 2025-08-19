@@ -45,6 +45,20 @@ wrap.on('slideChange', function () {
     updateNav(this.realIndex);
 });
 
+//인트로 web 슬라이드
+const web = new Swiper('#web_swiper', {
+    direction: 'vertical',       // 세로 슬라이드
+    slidesPerView: 3,            // 한 번에 3개 표시
+    spaceBetween: 10,            // 슬라이드 간격
+    loop: true,                  // 무한 루프
+    centeredSlides: true,        // 중앙 슬라이드 강조
+    autoplay: {
+        delay: 2500,               // 2초마다 이동
+        disableOnInteraction: false
+    },
+});
+
+
 //프로젝트 슬라이드
 const project1 = new Swiper('#project_swiper',{
     autoplay:{delay:4000},
