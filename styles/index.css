@@ -79,7 +79,7 @@ header a:last-child {margin-right: 0;}
 }
 #wrap .swiper-wrapper .intro h1 {
     font-size:9.375rem; font-weight: 900;
-    color:#1B3C53; letter-spacing: 0.05em;
+    color:#1B3C53; letter-spacing: 0.2em;
     margin:100px 0 20px 200px;
 }
 #wrap .swiper-wrapper .intro > p {
@@ -90,14 +90,14 @@ header a:last-child {margin-right: 0;}
 #wrap .swiper-wrapper .intro .square {
     position:absolute; right:250px; top:70px;
 }
-#wrap .swiper-wrapper .intro > p::after {
+#wrap .swiper-wrapper .intro .year::after {
     content:''; display:block;
     position: absolute;
     width:1px; height:0;
     background-color: #1B3C53; opacity: 0.5;
     margin-top: 22px;
     transform: translateX(-50%);
-    animation:line 2s ease forwards;
+    animation:line 4s ease infinite;
 }
 
 @keyframes line {
@@ -186,10 +186,56 @@ header a:last-child {margin-right: 0;}
 
 /* ------------------------------- 프로필 */
 #wrap .swiper-wrapper .profile {
-    position: relative;
-    z-index:600;
-    background: url(../images/ji_yun.png) no-repeat center 40% / contain;
+    /* background: url(../images/ji_yun.png) no-repeat center 40% / contain; */
 }
+#wrap .swiper-wrapper .profile .top {
+    width:914px;
+    margin:200px 0 0 110px;
+    display: flex; gap:50px; align-items: center;
+}
+#wrap .swiper-wrapper .profile .top .profile_photo {
+    display: flex; gap:100px; align-items: center;
+}
+#wrap .swiper-wrapper .profile .top .profile_photo .me_photo {}
+#wrap .swiper-wrapper .profile .top .profile_photo .me_photo img {}
+#wrap .swiper-wrapper .profile .top .profile_photo p {
+    display: flex; flex-flow: column nowrap;
+    gap:30px; 
+}
+#wrap .swiper-wrapper .profile .top .profile_photo p span {}
+#wrap .swiper-wrapper .profile .top .profile_photo p span:last-child {
+    font-size: 1.75rem; font-weight: 300;
+}
+#wrap .swiper-wrapper .profile .top .profile_photo p span em {
+    font-size: 3rem; font-weight: 600;
+    margin-right:20px;
+    letter-spacing: 0.1em;
+}
+
+#wrap .swiper-wrapper .profile .top .profile_wrap {}
+#wrap .swiper-wrapper .profile .top .profile_wrap .profile_cont {
+    display:flex; flex-flow: column nowrap;  gap:20px;
+}
+#wrap .swiper-wrapper .profile .top .profile_wrap .profile_cont li {
+    font-size: 1.125rem;
+}
+#wrap .swiper-wrapper .profile .top .profile_wrap .profile_cont li em {
+    display: inline-block;
+    width:62px; margin-right:20px;
+    font-weight: 600;
+}
+#wrap .swiper-wrapper .profile .top .profile_wrap .profile_cont li span {}
+
+#wrap .swiper-wrapper .profile > p {
+    width:1700px;
+    margin:210px 0 0 110px;
+}
+#wrap .swiper-wrapper .profile > p img {width:100%}
+#wrap .swiper-wrapper .profile .skill {
+    width:653px;
+    position:absolute; right:100PX; top:-155PX;
+}
+#wrap .swiper-wrapper .profile .skill img {width:100%}
 
 
 
