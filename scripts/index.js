@@ -8,7 +8,7 @@ const wrap = new Swiper('#wrap',{
             const header = document.querySelector('header'); 
             const currentIndex = this.realIndex;
 
-            if (currentIndex >= 1 && currentIndex <= 4) {
+            if (currentIndex >= 1 && currentIndex <= 3) {
                 header.classList.remove('hide'); // 보여주기
             } else {
                 header.classList.add('hide'); // 숨기기
