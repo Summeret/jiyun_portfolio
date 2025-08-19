@@ -221,7 +221,7 @@ header a:last-child {margin-right: 0;}
 #wrap .swiper-wrapper .profile > p img {width:100%}
 #wrap .swiper-wrapper .profile .skill {
     width:653px;
-    position:absolute; right:100PX; top:-155PX;
+    position:absolute; right:50PX; top:-155PX;
 }
 #wrap .swiper-wrapper .profile .skill img {width:100%}
 
