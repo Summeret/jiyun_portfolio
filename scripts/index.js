@@ -53,7 +53,7 @@ const web = new Swiper('#web_swiper', {
     loop: true,                  // 무한 루프
     centeredSlides: true,        // 중앙 슬라이드 강조
     autoplay: {
-        delay: 2500,               // 2초마다 이동
+        delay: 2000,               // 2초마다 이동
         disableOnInteraction: false
     },
 });
@@ -76,10 +76,10 @@ const project1 = new Swiper('#project_swiper',{
 
 //sns 슬라이드
 const sns = new Swiper('#sns_swiper',{
-    slidesPerView:4,
+    slidesPerView:2.8,
     spaceBetween:10,
     autoplay:{delay:0,},
-    speed:8000,
+    speed:9000,
     loop:true,
 })
 
@@ -100,10 +100,10 @@ snsPopupBg.addEventListener('click',()=>{
 
 //배너 슬라이드
 const bnr = new Swiper('#bnr_swiper',{
-    slidesPerView:3.5,
+    slidesPerView:3,
     spaceBetween:10,
     autoplay:{delay:0,},
-    speed:8000,
+    speed:9000,
     loop:true,
 })
 
@@ -124,10 +124,9 @@ bnrPopup.addEventListener('click',()=>{
 
 //상세페이지 슬라이드
 const detailePage = new Swiper('#detail_swiper',{
-    slidesPerView:5,
+    slidesPerView:1,
     spaceBetween:20,
-    autoplay:{delay:0},
-    speed:7000,
+    autoplay:{delay:4000},
     loop:true,
 })
 const detaile_pro = document.querySelectorAll('#detail_swiper .swiper-slide')
