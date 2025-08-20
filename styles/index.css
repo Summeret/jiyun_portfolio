@@ -177,30 +177,30 @@ header a:last-child {margin-right: 0;}
     /* background: url(../images/ji_yun.png) no-repeat center 40% / contain; */
 }
 #wrap .swiper-wrapper .profile .top {
-    width:914px;
-    margin:200px 0 0 110px;
-    display: flex; gap:100px; align-items: center;
+    width:max-content;
+    margin:200px 0 0 200px;
+    display: flex; gap:120px; align-items: end;
 }
-#wrap .swiper-wrapper .profile .top .profile_photo {
-    display: flex; gap:50px; align-items: center;
-}
+#wrap .swiper-wrapper .profile .top .profile_photo {}
 #wrap .swiper-wrapper .profile .top .profile_photo .me_photo {}
 #wrap .swiper-wrapper .profile .top .profile_photo .me_photo img {}
-#wrap .swiper-wrapper .profile .top .profile_photo p {
+
+#wrap .swiper-wrapper .profile .top .profile_wrap {}
+#wrap .swiper-wrapper .profile .top .profile_wrap > p {
     display: flex; flex-flow: column nowrap;
     gap:30px; 
+    margin-bottom:50px;
 }
-#wrap .swiper-wrapper .profile .top .profile_photo p span {}
-#wrap .swiper-wrapper .profile .top .profile_photo p span:last-child {
+#wrap .swiper-wrapper .profile .top .profile_wrap p span {}
+#wrap .swiper-wrapper .profile .top .profile_wrap p span:last-child {
     font-size: 1.75rem; font-weight: 300;
 }
-#wrap .swiper-wrapper .profile .top .profile_photo p span em {
+#wrap .swiper-wrapper .profile .top .profile_wrap p span em {
     font-size: 3rem; font-weight: 600;
     margin-right:10px;
     letter-spacing: 0.1em;
 }
 
-#wrap .swiper-wrapper .profile .top .profile_wrap {}
 #wrap .swiper-wrapper .profile .top .profile_wrap .profile_cont {
     display:flex; flex-flow: column nowrap;  gap:20px;
 }
@@ -214,14 +214,14 @@ header a:last-child {margin-right: 0;}
 }
 #wrap .swiper-wrapper .profile .top .profile_wrap .profile_cont li span {}
 
-#wrap .swiper-wrapper .profile > p {
+#wrap .swiper-wrapper .profile .education {
     width:1700px;
-    margin:210px 0 0 110px;
+    margin:160px 0 0 100px;
 }
-#wrap .swiper-wrapper .profile > p img {width:100%}
+#wrap .swiper-wrapper .profile .education img {width:100%}
 #wrap .swiper-wrapper .profile .skill {
     width:653px;
-    position:absolute; right:50PX; top:-155PX;
+    position:absolute; right:80px; top:54px;
 }
 #wrap .swiper-wrapper .profile .skill img {width:100%}
 
