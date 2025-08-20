@@ -188,17 +188,17 @@ header a:last-child {margin-right: 0;}
 #wrap .swiper-wrapper .profile .top .profile_wrap {}
 #wrap .swiper-wrapper .profile .top .profile_wrap > p {
     display: flex; flex-flow: column nowrap;
-    gap:30px; 
+    gap:20px; 
     margin-bottom:50px;
 }
 #wrap .swiper-wrapper .profile .top .profile_wrap p span {}
 #wrap .swiper-wrapper .profile .top .profile_wrap p span:last-child {
-    font-size: 1.75rem; font-weight: 300;
+    font-size: 1.75rem; font-weight: 200;
 }
 #wrap .swiper-wrapper .profile .top .profile_wrap p span em {
-    font-size: 3rem; font-weight: 600;
+    font-size: 2.75rem; font-weight: 600;
     margin-right:10px;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.25em;
 }
 
 #wrap .swiper-wrapper .profile .top .profile_wrap .profile_cont {
