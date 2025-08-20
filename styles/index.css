@@ -236,74 +236,22 @@ header a:last-child {margin-right: 0;}
 #wrap .swiper-wrapper .web_design .title h2 {
     font-size: 3rem; font-weight: 600;
     margin-bottom:20px;
-    color:rgba(27,60,83,0.8)
+    color:#1B3C53;
 }
 #wrap .swiper-wrapper .web_design .title p {
     font-size: 1.25rem  ;
 }
 
-#wrap .swiper-wrapper .web_design .container {
-    width:1300px; margin:0 auto;
-    padding:20px 0 60px;
-    position:relative;
-}
-#wrap .swiper-wrapper .web_design .container #project_swiper {
-    height:600px; width:1200px;
-}
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper {}
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide {
-    display: flex; gap:100px; justify-content: center;
-    align-items: center;
-}
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide p {
-    width:600px; 
-}
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide p img {width:100%;}
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .content {
-    width:400px; height:max-content;
 
-}
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .content p {
-    margin-bottom:40px;
 
-}
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .content p span {
-    font-size: 1.125rem; margin-right:10px;
-}
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .content p em {
-    font-size: 1.75rem; font-weight: 500;
-}
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .content ul {}
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .content ul li {
-    margin-bottom:20px;
-}
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .content ul li:last-child {
-    margin-bottom:0;
-}
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .content .btn_wrap {
-    display: flex; justify-content: space-between;
-    margin-top:40px;
-}
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .content .btn_wrap a {
-    width:195px; padding:10px 65px;
-    border:1px solid #1B3C53; color:#1B3C53;
-    border-radius: 5px;
-    font-size:0.875rem;
-    transition: background-color 1s ease, color 1s ease, border-color 1s ease;
-}
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .content .btn_wrap a:hover {
-    background-color: #1B3C53;
-    color:#F9F3EF;
-}
-
-#wrap .swiper-wrapper .web_design .container .swiper-button-prev,
+/* #wrap .swiper-wrapper .web_design .container .swiper-button-prev,
 #wrap .swiper-wrapper .web_design .container .swiper-button-next {
     color:#1B3C53;
 }
-/* 11 */
+
 #wrap .swiper-wrapper .web_design .container .swiper-pagination-bullet {
     background-color: #1B3C53;
-}
+} */
 
 /* ------------------------------- 디자인 */
 #wrap .swiper-wrapper .design {}
@@ -314,7 +262,7 @@ header a:last-child {margin-right: 0;}
 }
 #wrap .swiper-wrapper .design .title h2 {
     font-size:3rem; font-weight:600;
-    color:rgba(27,60,83,0.8);
+    color:#1B3C53;
 }
 #wrap .swiper-wrapper .design .title p {
     display: flex; 
@@ -336,8 +284,8 @@ header a:last-child {margin-right: 0;}
 }
 #wrap .swiper-wrapper .design .design_content .left .bnr_container {}
 #wrap .swiper-wrapper .design .design_content .left .bnr_container > p {
-    font-size: 1.5rem; font-weight: 900;
-    margin-bottom: 15px;
+    /* font-size: 1.5rem; font-weight: 900;
+    margin-bottom: 15px; */
 }
 #wrap .swiper-wrapper .design .design_content .left .bnr_container #bnr_swiper {
     border-radius: 20px;
@@ -357,8 +305,8 @@ header a:last-child {margin-right: 0;}
 
 #wrap .swiper-wrapper .design .design_content .left .sns_container {}
 #wrap .swiper-wrapper .design .design_content .left .sns_container >p {
-    font-size: 1.5rem; font-weight: 900;
-    margin-bottom: 15px;
+    /* font-size: 1.5rem; font-weight: 900;
+    margin-bottom: 15px; */
 }
 #wrap .swiper-wrapper .design .design_content .left .sns_container #sns_swiper {
     /* background-color:aqua; */
@@ -377,8 +325,8 @@ header a:last-child {margin-right: 0;}
 
 #wrap .swiper-wrapper .design .detail_container {}
 #wrap .swiper-wrapper .design .detail_container >p {
-    font-size: 1.5rem; font-weight: 900;
-    margin-bottom:15px;
+    /* font-size: 1.5rem; font-weight: 900;
+    margin-bottom:15px; */
 }
 #wrap .swiper-wrapper .design .detail_container #detail_swiper {
     width:400px; height:700px;
@@ -390,6 +338,30 @@ header a:last-child {margin-right: 0;}
 }
 #wrap .swiper-wrapper .design .detail_container #detail_swiper .swiper-wrapper .swiper-slide img {
     width:100%;
+}
+
+#wrap .swiper-wrapper .design .design_content .left .bnr_container > p,
+#wrap .swiper-wrapper .design .design_content .left .sns_container >p,
+#wrap .swiper-wrapper .design .detail_container >p {
+    width: fit-content;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    margin-bottom:15px;
+    text-transform: uppercase;
+    color: transparent;/* 텍스트는 기본 투명 */
+    -webkit-text-stroke: 1px rgba(27, 60, 83, 0.6);  /* 외곽선은 항상 보임 */
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-color: #1B3C53;  /* 채워질 색상 */
+    animation: fill 3s ease infinite;
+}
+
+@keyframes fill {
+    0%   { background-color: transparent; }
+    30%  { background-color: rgba(27, 60, 83, 0.8); }   /* 점점 채워짐 */
+    70%  { background-color: #1B3C53; }   /* 잠시 유지 (딜레이) */
+    100% { background-color: transparent; } /* 다시 사라짐 */
 }
 
 /* ------------------------------- 아웃트로 */
