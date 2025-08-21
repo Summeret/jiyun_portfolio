@@ -178,7 +178,7 @@ header a:last-child {margin-right: 0;}
 }
 #wrap .swiper-wrapper .profile .top {
     width:max-content;
-    margin:200px 0 0 200px;
+    margin:200px 0 0 250px;
     display: flex; gap:120px; align-items: end;
 }
 #wrap .swiper-wrapper .profile .top .profile_photo {}
@@ -221,7 +221,7 @@ header a:last-child {margin-right: 0;}
 #wrap .swiper-wrapper .profile .education img {width:100%}
 #wrap .swiper-wrapper .profile .skill {
     width:653px;
-    position:absolute; right:80px; top:54px;
+    position:absolute; right:150px; top:54px;
 }
 #wrap .swiper-wrapper .profile .skill img {width:100%}
 
@@ -234,7 +234,7 @@ header a:last-child {margin-right: 0;}
     text-align: left;
 }
 #wrap .swiper-wrapper .web_design .title h2 {
-    font-size: 3rem; font-weight: 600;
+    font-size: 3rem; font-weight: 700;
     margin-bottom:20px;
     color:#1B3C53;
 }
@@ -256,19 +256,19 @@ header a:last-child {margin-right: 0;}
 /* ------------------------------- 디자인 */
 #wrap .swiper-wrapper .design {}
 #wrap .swiper-wrapper .design .title {
-    display: flex; flex-flow: column nowrap; gap:15px;
+    display: flex; flex-flow: column nowrap; gap:20px;
     width:max-content;
-    padding:40px 60px; margin-top:54px;
+    padding:40px 80px; margin-top:54px;
 }
 #wrap .swiper-wrapper .design .title h2 {
-    font-size:3rem; font-weight:600;
+    font-size:3rem; font-weight:700;
     color:#1B3C53;
 }
 #wrap .swiper-wrapper .design .title p {
     display: flex; 
 }
 #wrap .swiper-wrapper .design .title p span {
-    color:#1B3C53;
+    color:#1B3C53; font-size: 1.25rem;
 }
 #wrap .swiper-wrapper .design .title p span:first-child {
     font-weight:600; margin-right:20px;

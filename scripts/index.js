@@ -53,7 +53,7 @@ const web = new Swiper('#web_swiper', {
     loop: true,                  // 무한 루프
     centeredSlides: true,        // 중앙 슬라이드 강조
     autoplay: {
-        delay: 2000,               // 2초마다 이동
+        delay: 1500,               // 2초마다 이동
         disableOnInteraction: false
     },
 });
