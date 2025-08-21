@@ -60,7 +60,7 @@ const web = new Swiper('#web_swiper', {
 
 
 //프로젝트 슬라이드
-const project1 = new Swiper('#project_swiper',{
+/* const project1 = new Swiper('#project_swiper',{
     autoplay:{delay:4000},
     loop:true,
     //scrollbar:{el:'#project_swiper~.swiper-scrollbar'},
@@ -72,11 +72,11 @@ const project1 = new Swiper('#project_swiper',{
         nextEl:'#project_swiper~.swiper-button-next',
         prevEl:'#project_swiper~.swiper-button-prev',
     },
-})
+}) */
 
 //sns 슬라이드
 const sns = new Swiper('#sns_swiper',{
-    slidesPerView:2.8,
+    slidesPerView:3,
     spaceBetween:10,
     autoplay:{delay:0,},
     speed:9000,
@@ -100,7 +100,7 @@ snsPopupBg.addEventListener('click',()=>{
 
 //배너 슬라이드
 const bnr = new Swiper('#bnr_swiper',{
-    slidesPerView:3,
+    slidesPerView:2.3,
     spaceBetween:10,
     autoplay:{delay:0,},
     speed:9000,
