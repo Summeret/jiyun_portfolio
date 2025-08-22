@@ -61,7 +61,7 @@ const web = new Swiper('#web_swiper', {
 
 //프로젝트 슬라이드
 const project1 = new Swiper('#project_swiper',{
-    //autoplay:{delay:4000},
+    autoplay:{delay:3500},
     loop:true,
     scrollbar:{el:'#project_swiper~.swiper-scrollbar'},
     /* pagination: {

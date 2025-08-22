@@ -384,15 +384,16 @@ header a:last-child {margin-right: 0;}
     display: flex; flex-flow: column nowrap; gap:20px;
     margin-top: 150px;
 }
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_right .btn_wrap button {
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_right .btn_wrap a {
     width:325px; padding:10px 0;
     border: 1px solid #333;
     background-color: #fff;
     font-size: 2rem; color:#333;
+    text-align: center;
     border-radius: 5px;
     transition: background-color 0.6s ease, color 0.6s ease;
 }
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_right .btn_wrap button:hover {
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_right .btn_wrap a:hover {
     border: 1px solid #00528B;
     background-color: #00528B;
     color:#F9F3EF;
@@ -438,7 +439,7 @@ header a:last-child {margin-right: 0;}
     width:16px; height:16px;
     border-radius: 50%;
 }
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide2 .web_right .btn_wrap button:hover {
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide2 .web_right .btn_wrap a:hover {
     border: 1px solid #2F4C18;
     background-color: #2F4C18;
     color:#F9F3EF;
@@ -484,7 +485,7 @@ header a:last-child {margin-right: 0;}
     width:16px; height:16px;
     border-radius: 50%;
 }
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide3 .web_right .btn_wrap button:hover {
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide3 .web_right .btn_wrap a:hover {
     border: 1px solid #C80A1E;
     background-color: #C80A1E;
     color:#F9F3EF;
@@ -535,7 +536,7 @@ header a:last-child {margin-right: 0;}
     margin:54px 0 0 80px;
     height:944px;
 }
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide4 .web_right .btn_wrap button:hover {
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide4 .web_right .btn_wrap a:hover {
     border: 1px solid #2F4C99;
     background-color: #2F4C99;
     color:#F9F3EF;
