@@ -60,19 +60,19 @@ const web = new Swiper('#web_swiper', {
 
 
 //프로젝트 슬라이드
-/* const project1 = new Swiper('#project_swiper',{
-    autoplay:{delay:4000},
+const project1 = new Swiper('#project_swiper',{
+    //autoplay:{delay:4000},
     loop:true,
-    //scrollbar:{el:'#project_swiper~.swiper-scrollbar'},
-    pagination: {
+    scrollbar:{el:'#project_swiper~.swiper-scrollbar'},
+    /* pagination: {
         el: '#project_swiper~.swiper-pagination',
         type:'bullets',
     },
     navigation:{
         nextEl:'#project_swiper~.swiper-button-next',
         prevEl:'#project_swiper~.swiper-button-prev',
-    },
-}) */
+    }, */
+})
 
 //sns 슬라이드
 const sns = new Swiper('#sns_swiper',{

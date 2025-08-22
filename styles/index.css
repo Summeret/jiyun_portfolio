@@ -1,25 +1,7 @@
 /* index.css */
-/* body {
-    margin: 0;
-    padding: 0;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    }
-
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    } */
-
-
+body {
+    background-color: #fafaf8;
+}
 
 header {
     position:fixed; left:0; top:0;
@@ -231,115 +213,333 @@ header a:last-child {margin-right: 0;}
 #wrap .swiper-wrapper .web_design .container {}
 #wrap .swiper-wrapper .web_design .container #project_swiper {}
 #wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper {}
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide {}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide {
+    display: flex;
+    position: relative;
+}
 
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_title {
-    background-color:aqua;
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left {}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_title {
     margin:114px 0 0 100px;
     width:max-content;
 }
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_title p {
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_title p {
     font-weight: 600;
     color:#00528B;
     font-size: 1.125rem;
     margin-bottom:20px;
 }
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_title h2 {
-    font-weight: 600; font-size: 2.25rem;
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_title h2 {
+    font-weight:400; font-size: 2.25rem;
 }
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_title h2 em {
-    font-size: 4rem; 
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_title h2 em {
+    font-size: 3.5rem; font-weight:600;
     margin-right:20px;
 }
 
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_content {}
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_content .web_top {}
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_content .web_top dt {
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_content {
+    display: flex; flex-flow: column nowrap;
+    gap:50px;
+    margin:140px 0 0 100px;
+    width:430px;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_content .web_top {}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_content .web_top dt {
     width:70px;
     float: left; margin-right:10px;
     font-weight: 600; color:#00528B;
     font-size: 1.125rem;
     margin-bottom:20px;
 }
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_content .web_top dd {
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_content .web_top dd {
     font-size: 1.125rem;
     margin-bottom:20px;
 }
 
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_content .responsive  {}
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_content .responsive > h3 {
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_content .responsive  {}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_content .responsive > h3 {
     font-size: 1.125rem; font-weight: 600;
     color:#00528B;
     margin-bottom: 20px;
 }
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_content .responsive p {
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_content .responsive .res_cont {
+    display:flex; gap:10px;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_content .responsive .res_cont p {
     color:#00528B;
     font-size: 1.125rem; font-weight: 600;
     text-align: center;
     width:120px;
 }
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_content .responsive p::after {
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_content .responsive .res_cont p::after {
     content:''; display: block;
     width:120px; height:0.5px;
     background-color: #00528B;
     margin-top:10px;
 }
 
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_content .tool {}
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_content .tool > h3 {
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_content .tool {}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_content .tool > h3 {
     color:#00528B;
     font-size: 1.125rem; font-weight: 600;
+    margin-bottom: 20px;
 }
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_content .tool ul {
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_content .tool ul {
     display: flex; gap:10px;
 }
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_content .tool ul li {
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_content .tool ul li {
     width:40px; height:40px;
 }
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_content .tool ul li img {
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_content .tool ul li img {
     width:100%;
 }
 
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_content .style {
-
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_content .style {
+    display: flex; gap:50px;
 }
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_content .style .font {}
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_content .style .font > h3 {
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_content .style .font {}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_content .style .font > h3 {
     font-size: 1.125rem; font-weight: 600;
     color:#00528B;
+    margin-bottom: 10px;
 }
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_content .style .font > p {
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_content .style .font > p {
     font-size: 1.125rem;
 }
 
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_content .style .color {}
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_content .style .color ul {}
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_content .style .color ul li {}
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_content .style .color ul li span {}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_content .style .color {}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_content .style .color h3 {
+    font-size: 1.125rem; font-weight: 600;
+    color:#00528B;
+    margin-bottom: 10px;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_content .style .color ul {
+    display: flex; flex-flow: column nowrap;
+    gap:10px;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_content .style .color ul li {
+    display: flex; align-items: center;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_content .style .color ul li span {
+    margin-right:5px;
+}
 
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_content .style .color ul li:nth-child(1) span {
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_content .style .color ul li .a_gray {
     display: inline-block;
     width:16px; height:16px;
     border-radius: 50%;
     background-color: #333;
 }
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_content .style .color ul li:nth-child(2) span {
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_content .style .color ul li .a_blue {
     display: inline-block;
     width:16px; height:16px;
     border-radius: 50%;
     background-color: #0E4885;
 }
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_content .style .color ul li:nth-child(3) span {
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_content .style .color ul li .a_sky {
     display: inline-block;
     width:16px; height:16px;
     border-radius: 50%;
     background-color: #A9CEE8;
 }
 
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_content .style .color ul li em {}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_content .style .color ul li em {}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_content .style .color > p em {}
 
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_center {}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_center .bg {
+    margin:54px 0 0 145px;
+    height:944px;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_center .bg img {
+    width:100%; height:100%;
+}
 
-#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_content .style .color > p em {}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_center .web_mockup {
+    position:absolute; left:550px; bottom:130px;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_center .web_mockup img {}
+
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_right {
+    position:absolute; right:96px; bottom:100px;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_right .view {
+    font-size: 1.5rem; 
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_right .view::after {
+    content:''; display: block;
+    height:0; width:2px;
+    background-color: #333; opacity: 0.5;
+    position: absolute; left:0; top:50px;
+    transform: translateX(-50%);
+    animation:web_line 2s ease infinite;
+}
+
+@keyframes web_line {
+    0% { height: 0; }
+    100% { height: 100px; }
+}
+
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_right .btn_wrap {
+    display: flex; flex-flow: column nowrap; gap:20px;
+    margin-top: 150px;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_right .btn_wrap button {
+    width:325px; padding:10px 0;
+    border: 1px solid #333;
+    background-color: #fff;
+    font-size: 2rem; color:#333;
+    border-radius: 5px;
+    transition: background-color 0.6s ease, color 0.6s ease;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_right .btn_wrap button:hover {
+    border: 1px solid #00528B;
+    background-color: #00528B;
+    color:#F9F3EF;
+}
+
+/* slide2 */
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide2 .web_left .web_title p {
+    color:#3E5F24;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide2 .web_left .web_content .web_top dt {
+    color:#3E5F24;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide2 .web_left .web_content .responsive > h3 {
+    color:#3E5F24;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide2 .web_left .web_content .responsive .res_cont p {
+    color:#3E5F24;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide2 .web_left .web_content .responsive .res_cont p::after {
+    content:''; display: block;
+    width:120px; height:0.5px;
+    margin-top:10px;
+    background-color:#3E5F24;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide2 .web_left .web_content .tool > h3 {
+    color:#3E5F24;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide2 .web_left .web_content .style .font > h3 {
+    color:#3E5F24;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide2 .web_left .web_content .style .color h3{
+    color:#3E5F24;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide2 .web_left .web_content .style .color ul li .b_green {
+    background-color: #7AC142;
+    display: inline-block;
+    width:16px; height:16px;
+    border-radius: 50%;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide2 .web_left .web_content .style .color ul li .b_deepgreen {
+    background-color: #2F4C18;
+    display: inline-block;
+    width:16px; height:16px;
+    border-radius: 50%;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide2 .web_right .btn_wrap button:hover {
+    border: 1px solid #2F4C18;
+    background-color: #2F4C18;
+    color:#F9F3EF;
+}
+
+/* slide3 */
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide3 .web_left .web_title p {
+    color:#C80A1E;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide3 .web_left .web_content .web_top dt {
+    color:#C80A1E;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide3 .web_left .web_content .responsive > h3 {
+    color:#C80A1E;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide3 .web_left .web_content .responsive .res_cont p {
+    color:#C80A1E;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide3 .web_left .web_content .responsive .res_cont p::after {
+    content:''; display: block;
+    width:120px; height:0.5px;
+    margin-top:10px;
+    background-color:#C80A1E;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide3 .web_left .web_content .tool > h3 {
+    color:#C80A1E;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide3 .web_left .web_content .style .font > h3 {
+    color:#C80A1E;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide3 .web_left .web_content .style .color h3{
+    color:#C80A1E;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide3 .web_left .web_content .style .color ul li .c_red {
+    background-color: #C80A1E;
+    display: inline-block;
+    width:16px; height:16px;
+    border-radius: 50%;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide3 .web_left .web_content .style .color ul li .c_beige {
+    background-color: #F2E9E0;
+    display: inline-block;
+    width:16px; height:16px;
+    border-radius: 50%;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide3 .web_right .btn_wrap button:hover {
+    border: 1px solid #C80A1E;
+    background-color: #C80A1E;
+    color:#F9F3EF;
+}
+
+/* slide4 */
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide4 .web_left .web_title p {
+    color:#2F4C99;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide4 .web_left .web_content .web_top dt {
+    color:#2F4C99;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide4 .web_left .web_content .responsive > h3 {
+    color:#2F4C99;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide4 .web_left .web_content .responsive .res_cont p {
+    color:#2F4C99;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide4 .web_left .web_content .responsive .res_cont p::after {
+    content:''; display: block;
+    width:120px; height:0.5px;
+    margin-top:10px;
+    background-color:#2F4C99;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide4 .web_left .web_content .tool > h3 {
+    color:#2F4C99;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide4 .web_left .web_content .style .font > h3 {
+    color:#2F4C99;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide4 .web_left .web_content .style .color h3{
+    color:#2F4C99;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide4 .web_left .web_content .style .color ul li .c_blue {
+    background-color: #2F4C99;
+    display: inline-block;
+    width:16px; height:16px;
+    border-radius: 50%;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide4 .web_left .web_content .style .color ul li .c_gray {
+    background-color: #F5F5F5;
+    display: inline-block;
+    width:16px; height:16px;
+    border-radius: 50%;
+    border: 0.1px solid #333;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_center .web_bg4 {
+    margin:54px 0 0 80px;
+    height:944px;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide4 .web_right .btn_wrap button:hover {
+    border: 1px solid #2F4C99;
+    background-color: #2F4C99;
+    color:#F9F3EF;
+}
 
 
 /* ------------------------------- 디자인 */
@@ -373,10 +573,7 @@ header a:last-child {margin-right: 0;}
     gap:40px; justify-content: end;
 }
 #wrap .swiper-wrapper .design .design_content .left .bnr_container {}
-#wrap .swiper-wrapper .design .design_content .left .bnr_container > p {
-    /* font-size: 1.5rem; font-weight: 900;
-    margin-bottom: 15px; */
-}
+#wrap .swiper-wrapper .design .design_content .left .bnr_container > p {}
 #wrap .swiper-wrapper .design .design_content .left .bnr_container #bnr_swiper {
     border-radius: 20px;
     width:1200px;
@@ -394,12 +591,8 @@ header a:last-child {margin-right: 0;}
 
 
 #wrap .swiper-wrapper .design .design_content .left .sns_container {}
-#wrap .swiper-wrapper .design .design_content .left .sns_container >p {
-    /* font-size: 1.5rem; font-weight: 900;
-    margin-bottom: 15px; */
-}
+#wrap .swiper-wrapper .design .design_content .left .sns_container >p {}
 #wrap .swiper-wrapper .design .design_content .left .sns_container #sns_swiper {
-    /* background-color:aqua; */
     border-radius: 20px;
     width:1200px; height:350px;
 }
@@ -414,10 +607,7 @@ header a:last-child {margin-right: 0;}
 }
 
 #wrap .swiper-wrapper .design .detail_container {}
-#wrap .swiper-wrapper .design .detail_container >p {
-    /* font-size: 1.5rem; font-weight: 900;
-    margin-bottom:15px; */
-}
+#wrap .swiper-wrapper .design .detail_container >p {}
 #wrap .swiper-wrapper .design .detail_container #detail_swiper {
     width:400px; height:750px;
     border-radius: 20px;
