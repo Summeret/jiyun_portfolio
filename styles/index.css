@@ -485,6 +485,14 @@ header a:last-child {margin-right: 0;}
     width:16px; height:16px;
     border-radius: 50%;
 }
+
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .tablet_mockup {
+    position:absolute; right:550px; bottom:100px;
+}
+#wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .mobile_mockup {
+    position:absolute; right:451px; bottom:80px;
+}
+
 #wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .slide3 .web_right .btn_wrap a:hover {
     border: 1px solid #C80A1E;
     background-color: #C80A1E;
