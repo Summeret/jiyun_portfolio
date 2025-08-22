@@ -32,6 +32,7 @@ function updateNav(activeIndex) {
     });
 }
 
+
 nav.forEach((obj, idx)=>{
     console.log(obj, idx)
     obj.addEventListener('click',(e)=>{
@@ -90,6 +91,8 @@ for(let sns of snsProject){
     sns.addEventListener('click',()=>{
         snsPopupBg.style.display = 'block';
         snsPopupBg.children[0].children[0].src = sns.children[0].src;
+        const popupBox = snsPopupBg.querySelector('.popup');
+        if (popupBox) popupBox.scrollTop = 0;
         wrap.mousewheel.disable();
     })
 }
@@ -136,6 +139,10 @@ for(let det of detaile_pro){
     det.addEventListener('click',()=>{
         detailePopup.style.display = 'block';
         detailePopup.children[0].children[0].src = det.children[0].src;
+
+        const popupBox = detailePopup.querySelector('.popup');
+        if (popupBox) popupBox.scrollTop = 0;
+
         wrap.mousewheel.disable();
     })
 }
