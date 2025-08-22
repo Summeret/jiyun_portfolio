@@ -62,7 +62,7 @@ const web = new Swiper('#web_swiper', {
 
 //프로젝트 슬라이드
 const project1 = new Swiper('#project_swiper',{
-    autoplay:{delay:3500},
+    autoplay:{delay:4000},
     loop:true,
     scrollbar:{el:'#project_swiper~.swiper-scrollbar'},
     /* pagination: {
@@ -129,7 +129,7 @@ bnrPopup.addEventListener('click',()=>{
 const detailePage = new Swiper('#detail_swiper',{
     slidesPerView:1,
     spaceBetween:20,
-    autoplay:{delay:2500},
+    autoplay:{delay:2000},
     loop:true,
 })
 const detaile_pro = document.querySelectorAll('#detail_swiper .swiper-slide')
