@@ -387,7 +387,7 @@ header a:last-child {margin-right: 0;}
     margin-top: 150px;
 }
 #wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_right .btn_wrap a {
-    width:325px; padding:10px 0;
+    width:325px; line-height:54px; 
     border-bottom: 1px solid #333;
     /* background-color: #fff; */
     font-size: 2rem; color:#333;
@@ -396,7 +396,8 @@ header a:last-child {margin-right: 0;}
     transition: background-color 0.7s ease, color 0.8s ease;
 }
 #wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_right .btn_wrap a:hover {
-    border-bottom: 1px solid #00528B;
+    border-bottom:1px solid #00528B;
+    border-radius: 5px;
     background-color: #00528B;
     color:#F9F3EF;
 }
