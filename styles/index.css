@@ -164,7 +164,7 @@ header a:last-child {margin-right: 0;}
 }
 #wrap .swiper-wrapper .profile .profile_container {
     display: flex; justify-content: space-between;
-    width:1691px; margin:70px auto;
+    width:1691px; margin:70px 0 0 150px;
 }
 #wrap .swiper-wrapper .profile .left {
     display: flex; flex-flow: column nowrap; gap:50px;
@@ -182,7 +182,7 @@ header a:last-child {margin-right: 0;}
 }
 #wrap .swiper-wrapper .profile .left .profile_content em 
 {
-    font-size: 4.5rem;
+    font-size: 5rem; font-weight: 300;
     font-family: Noto Serif KR, sans-serif;
 }
 #wrap .swiper-wrapper .profile .left .profile_content span {
