@@ -161,14 +161,13 @@ header a:last-child {margin-right: 0;}
     padding-top:70px;
 }
 #wrap .swiper-wrapper .profile .profile_container {
-    display: flex;
-    background-color: aqua;
-    width:1691px; margin:62px auto;
+    display: flex; justify-content: space-between;
+    width:1691px; margin:80px auto;
 }
 #wrap .swiper-wrapper .profile .left {
     display: flex; flex-flow: column nowrap; gap:50px;
     align-items: center; justify-content: center;
-    border: 1px solid red;
+    text-align: center;
 }
 #wrap .swiper-wrapper .profile .left .me_photo {
     width:350px; height:450px;
@@ -181,7 +180,7 @@ header a:last-child {margin-right: 0;}
 }
 #wrap .swiper-wrapper .profile .left .profile_content em 
 {
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-family: Noto Serif KR, sans-serif;
 }
 #wrap .swiper-wrapper .profile .left .profile_content span {
@@ -190,25 +189,75 @@ header a:last-child {margin-right: 0;}
 }
 
 #wrap .swiper-wrapper .profile .right {}
-#wrap .swiper-wrapper .profile .right .aboutme {}
-#wrap .swiper-wrapper .profile .right .aboutme > p {
-    font-size: 2.25rem; font-weight: 600;
-    margin-bottom: 40px;
+#wrap .swiper-wrapper .profile .right h2 {
+    font-size: 2rem; font-weight: 600;
+    margin-bottom: 20px;
 }
+#wrap .swiper-wrapper .profile .right .aboutme {
+    margin-bottom: 80px;
+}
+#wrap .swiper-wrapper .profile .right .aboutme h2 {}
 #wrap .swiper-wrapper .profile .right .aboutme .profile_list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2열 */
-    column-gap: 100px; /* 열 간격 */
-    row-gap: 20px;     /* 행 간격 */
+    display: flex; gap:100px
 }
-#wrap .swiper-wrapper .profile .right .aboutme .profile_list > p {}
-#wrap .swiper-wrapper .profile .right .aboutme .profile_list > p em {
-    font-size: 1.5rem; font-weight: 500;
+#wrap .swiper-wrapper .profile .right .aboutme .profile_list .list_left {
+    display: flex; flex-flow: column nowrap; gap:20px;
 }
-#wrap .swiper-wrapper .profile .right .aboutme .profile_list > p span {
-    font-size: 1.5rem;
+#wrap .swiper-wrapper .profile .right .aboutme .profile_list .list_left p {}
+#wrap .swiper-wrapper .profile .right .aboutme .profile_list .list_left p em {
+    width:99px;
+    font-size: 1.375rem; font-weight: 500;
+    margin-right:20px;
+}
+#wrap .swiper-wrapper .profile .right .aboutme .profile_list .list_left p span {
+    font-size: 1.375rem;
 }
 
+#wrap .swiper-wrapper .profile .right .aboutme .profile_list .list_right {
+    display: flex; flex-flow: column nowrap; gap:20px;
+}
+#wrap .swiper-wrapper .profile .right .aboutme .profile_list .list_right p {}
+#wrap .swiper-wrapper .profile .right .aboutme .profile_list .list_right p em {
+    width:99px;
+    font-size: 1.375rem; font-weight: 500;
+    margin-right:20px;
+}
+#wrap .swiper-wrapper .profile .right .aboutme .profile_list .list_right p span {
+    font-size: 1.375rem;
+}
+
+
+
+#wrap .swiper-wrapper .profile .right .education {
+    margin-bottom: 80px;
+}
+#wrap .swiper-wrapper .profile .right .education h2 {}
+#wrap .swiper-wrapper .profile .right .education p span {
+    font-size: 1.375rem;
+    margin-right:10px;
+    color:rgba(51,51,51,0.6);
+}
+#wrap .swiper-wrapper .profile .right .education p em {
+    font-size: 1.375rem;
+}
+
+#wrap .swiper-wrapper .profile .right .experience {
+    margin-bottom: 80px;
+}
+#wrap .swiper-wrapper .profile .right .experience h2 {}
+#wrap .swiper-wrapper .profile .right .experience p {
+    margin-bottom: 20px;
+}
+#wrap .swiper-wrapper .profile .right .experience p:last-child {margin-bottom: 0;}
+#wrap .swiper-wrapper .profile .right .experience p span {
+    width:90px; display: inline-block;
+    font-size: 1.375rem;
+    margin-right:10px;
+    color:rgba(51,51,51,0.6);
+}
+#wrap .swiper-wrapper .profile .right .experience p em {
+    font-size: 1.375rem;
+}
 
 
 
