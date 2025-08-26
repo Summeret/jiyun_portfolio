@@ -18,14 +18,16 @@ header.hide {
     opacity: 0;
     pointer-events: none;
 }
-header nav {}
+header nav {
+    position: relative;
+}
 header nav a {
     font-size:1.25rem;
     font-weight: 800;
     opacity: 0.6;
     transition: opacity 0.2s;
     margin-right:50px;
-    transition: color 0.7s ease, opacity 0.7s ease;
+    transition: color 0.5s ease, opacity 0.5s ease;
 }
 header a:hover,
 header nav a.active {
@@ -162,7 +164,7 @@ header a:last-child {margin-right: 0;}
 }
 #wrap .swiper-wrapper .profile .profile_container {
     display: flex; justify-content: space-between;
-    width:1691px; margin:80px auto;
+    width:1691px; margin:70px auto;
 }
 #wrap .swiper-wrapper .profile .left {
     display: flex; flex-flow: column nowrap; gap:50px;
