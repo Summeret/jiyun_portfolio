@@ -1,14 +1,14 @@
 /* index.css */
 body {
     background-color: #fefefe;
-    width:1920px;
+    max-width:100%; height:100vh;
 }
 
 
 header {
     position:fixed; left:0; top:0;
-    display: flex; gap:50px; align-items: center;
-    padding-left:40px;
+    display: flex; ; align-items: center; justify-content: space-between;
+    padding:0 60px;
     width:100%; height:70px;
     background-color: #fefefe;
     border-bottom:0.3px solid rgba(51,51,51,0.3);
@@ -18,12 +18,17 @@ header.hide {
     opacity: 0;
     pointer-events: none;
 }
+header > p {
+    font-size: 1.25rem; font-weight: 700;
+    font-family: Noto Serif KR, sans-serif;
+    color:rgba(51,51,51,0.8);
+}
 header nav {
     position: relative;
 }
 header nav a {
-    font-size:1.25rem;
-    font-weight: 800;
+    font-size:1.2rem; font-weight: 800;
+    font-family: Noto Serif KR, sans-serif;
     opacity: 0.6;
     transition: opacity 0.2s;
     margin-right:50px;
@@ -55,6 +60,7 @@ header a:last-child {margin-right: 0;}
     font-size:9.375rem; font-weight: 900;
     color:#1B3C53; letter-spacing: 0.2em;
     margin:100px 0 20px 150px;
+    font-family: Noto Serif KR, sans-serif;
 }
 #wrap .swiper-wrapper .intro > p {
     font-size: 1.875rem;
@@ -62,7 +68,7 @@ header a:last-child {margin-right: 0;}
     margin:0 0 22px 155px;
 }
 #wrap .swiper-wrapper .intro .square {
-    position:absolute; right:250px; top:70px;
+    position:absolute; right:250px; top:80px;
 }
 #wrap .swiper-wrapper .intro .year::after {
     content:''; display:block;
@@ -91,7 +97,8 @@ header a:last-child {margin-right: 0;}
 }
 
 #wrap .swiper-wrapper .intro .container #web_swiper .swiper-slide {
-    font-size: 2.25rem;
+    font-size: 2.2rem; font-weight: 600;
+    font-family: Noto Serif KR, sans-serif;
     color: #1B3C53;
     transition: transform 0.3s, opacity 0.3s;
 }
@@ -127,23 +134,28 @@ header a:last-child {margin-right: 0;}
 }
 #wrap .swiper-wrapper .intro .contact h2 {
     color:#1B3C53;
-    font-size: 1.5rem;
+    font-size: 1.5rem; font-weight: 600;
     letter-spacing:0.14em;
+    font-family: Noto Serif KR, sans-serif;
 }
 #wrap .swiper-wrapper .intro .contact > p {
-    font-size: 1.25rem; color:#1B3C53;
+    font-size: 1.25rem; font-weight: 600;
+    color:#1B3C53;
+    font-family: Noto Serif KR, sans-serif;
 }
 #wrap .swiper-wrapper .intro .contact .phone {
     display: flex; gap:10px;
 }
 #wrap .swiper-wrapper .intro .contact .phone span {
     color:#1B3C53;
+    font-family: Noto Serif KR, sans-serif;
 }
 #wrap .swiper-wrapper .intro .contact .email {
     display: flex; gap:10px;
 }
 #wrap .swiper-wrapper .intro .contact .email span {
     color:#1B3C53;
+    font-family: Noto Serif KR, sans-serif;
 }
 #wrap .swiper-wrapper .intro .contact .phone span:first-child,
 #wrap .swiper-wrapper .intro .contact .email span:first-child {
@@ -164,7 +176,7 @@ header a:last-child {margin-right: 0;}
 }
 #wrap .swiper-wrapper .profile .profile_container {
     display: flex; justify-content: space-between;
-    width:1691px; margin:70px 0 0 150px;
+    width:1691px; margin:40px 0 0 150px;
 }
 #wrap .swiper-wrapper .profile .left {
     display: flex; flex-flow: column nowrap; gap:50px;
@@ -182,50 +194,54 @@ header a:last-child {margin-right: 0;}
 }
 #wrap .swiper-wrapper .profile .left .profile_content em 
 {
-    font-size: 5rem; font-weight: 300;
+    font-size: 4.5rem; font-weight: 500;
+    letter-spacing: 0.05em;
     font-family: Noto Serif KR, sans-serif;
 }
 #wrap .swiper-wrapper .profile .left .profile_content span {
-    font-size: 1.375rem;
-    text-align: center; line-height: 1.5;
+    font-size: 1.25rem;
+    text-align: center; line-height: 1.6;
 }
 
 #wrap .swiper-wrapper .profile .right {}
 #wrap .swiper-wrapper .profile .right h2 {
-    font-size: 2rem; font-weight: 600;
-    margin-bottom: 20px;
+    font-size: 1.75rem; font-weight: 600;
+    margin-bottom: 40px;
+    font-family: Noto Serif KR, sans-serif;
 }
 #wrap .swiper-wrapper .profile .right .aboutme {
     margin-bottom: 80px;
 }
 #wrap .swiper-wrapper .profile .right .aboutme h2 {}
 #wrap .swiper-wrapper .profile .right .aboutme .profile_list {
-    display: flex; gap:100px
+    display: flex; gap:150px
 }
 #wrap .swiper-wrapper .profile .right .aboutme .profile_list .list_left {
-    display: flex; flex-flow: column nowrap; gap:20px;
+    display: flex; flex-flow: column nowrap; gap:30px;
 }
 #wrap .swiper-wrapper .profile .right .aboutme .profile_list .list_left p {}
 #wrap .swiper-wrapper .profile .right .aboutme .profile_list .list_left p em {
     width:99px;
-    font-size: 1.375rem; font-weight: 500;
-    margin-right:20px;
+    font-size: 1.25rem; font-weight: 500;
+    margin-right:40px;
+    font-family: Noto Serif KR, sans-serif;
 }
 #wrap .swiper-wrapper .profile .right .aboutme .profile_list .list_left p span {
-    font-size: 1.375rem;
+    font-size: 1.25rem; 
 }
 
 #wrap .swiper-wrapper .profile .right .aboutme .profile_list .list_right {
-    display: flex; flex-flow: column nowrap; gap:20px;
+    display: flex; flex-flow: column nowrap; gap:30px;
 }
 #wrap .swiper-wrapper .profile .right .aboutme .profile_list .list_right p {}
 #wrap .swiper-wrapper .profile .right .aboutme .profile_list .list_right p em {
     width:99px;
-    font-size: 1.375rem; font-weight: 500;
-    margin-right:20px;
+    font-size: 1.25rem; font-weight: 500;
+    margin-right:40px;
+    font-family: Noto Serif KR, sans-serif;
 }
 #wrap .swiper-wrapper .profile .right .aboutme .profile_list .list_right p span {
-    font-size: 1.375rem;
+    font-size: 1.25rem;
 }
 
 
@@ -235,12 +251,12 @@ header a:last-child {margin-right: 0;}
 }
 #wrap .swiper-wrapper .profile .right .education h2 {}
 #wrap .swiper-wrapper .profile .right .education p span {
-    font-size: 1.375rem;
+    font-size: 1.25rem;
     margin-right:10px;
     color:rgba(51,51,51,0.6);
 }
 #wrap .swiper-wrapper .profile .right .education p em {
-    font-size: 1.375rem;
+    font-size: 1.25rem;
 }
 
 #wrap .swiper-wrapper .profile .right .experience {
@@ -253,12 +269,12 @@ header a:last-child {margin-right: 0;}
 #wrap .swiper-wrapper .profile .right .experience p:last-child {margin-bottom: 0;}
 #wrap .swiper-wrapper .profile .right .experience p span {
     width:90px; display: inline-block;
-    font-size: 1.375rem;
+    font-size: 1.25rem;
     margin-right:10px;
     color:rgba(51,51,51,0.6);
 }
 #wrap .swiper-wrapper .profile .right .experience p em {
-    font-size: 1.375rem;
+    font-size: 1.25rem;
 }
 
 
@@ -295,7 +311,7 @@ header a:last-child {margin-right: 0;}
 
 #wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_left .web_content {
     display: flex; flex-flow: column nowrap;
-    gap:50px;
+    gap:70px;
     margin:140px 0 0 100px;
     width:430px;
 }
@@ -404,8 +420,8 @@ header a:last-child {margin-right: 0;}
 
 #wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_center {}
 #wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_center .bg {
-    margin:54px 0 0 145px;
-    height:944px;
+    margin:70px 0 0 145px;
+    
 }
 #wrap .swiper-wrapper .web_design .container #project_swiper .swiper-wrapper .swiper-slide .web_center .bg img {
     width:100%; height:100%;
@@ -727,6 +743,7 @@ header a:last-child {margin-right: 0;}
 }
 #wrap .swiper-wrapper .outro .center .outro_title .title p {
     font-size: 6rem; font-weight: 700;
+    font-family: Noto Serif KR, sans-serif;
     color:#1B3C53;
     letter-spacing: 0.15em;
 }
@@ -739,7 +756,7 @@ header a:last-child {margin-right: 0;}
     width:max-content;
 }        
 #wrap .swiper-wrapper .outro .center .outro_content span {
-    color:#1B3C53;
+    color:#1B3C53; 
 }        
 #wrap .swiper-wrapper .outro .contact {
     display:flex; flex-flow:column nowrap;
@@ -748,23 +765,25 @@ header a:last-child {margin-right: 0;}
 }
 #wrap .swiper-wrapper .outro .contact h2 {
     color:#1B3C53;
-    font-size: 1.5rem;
+    font-size: 1.5rem; font-weight: 600;
+    font-family: Noto Serif KR, sans-serif;
     letter-spacing:0.14em;
 }
 #wrap .swiper-wrapper .outro .contact > p {
     font-size: 1.25rem; color:#1B3C53;
+    font-family: Noto Serif KR, sans-serif;
 }
 #wrap .swiper-wrapper .outro .contact .phone {
     display: flex; gap:10px;
 }
 #wrap .swiper-wrapper .outro .contact .phone span {
-    color:#1B3C53;
+    color:#1B3C53; font-family: Noto Serif KR, sans-serif;
 }
 #wrap .swiper-wrapper .outro .contact .email {
     display: flex; gap:10px;
 }
 #wrap .swiper-wrapper .outro .contact .email span {
-    color:#1B3C53;
+    color:#1B3C53; font-family: Noto Serif KR, sans-serif;
 }
 
 
