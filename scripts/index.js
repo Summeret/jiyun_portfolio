@@ -80,7 +80,7 @@ const sns = new Swiper('#sns_swiper',{
     slidesPerView:3,
     spaceBetween:10,
     autoplay:{delay:0,},
-    speed:9000,
+    speed:7000,
     loop:true,
 })
 
@@ -106,7 +106,7 @@ const bnr = new Swiper('#bnr_swiper',{
     slidesPerView:2.3,
     spaceBetween:10,
     autoplay:{delay:0,},
-    speed:9000,
+    speed:8000,
     loop:true,
 })
 
